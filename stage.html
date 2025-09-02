@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Miniluk 스테이지 선택</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stage.css">
+</head>
+<body>
+    <h1>문제 선택</h1>
+    <div class="container">
+        <div class="stage-list">
+            <!-- JS에서 버튼 생성 -->
+        </div>
+    </div>
+    <script>
+        const listDiv = document.querySelector('.stage-list');
+        for(let i=1; i<=20; i++){
+            const btn = document.createElement('button');
+            btn.className = 'stage-btn';
+            btn.textContent = `퀴즈 ${i}`;
+            btn.onclick = function(){
+                window.location.href = `index.html?quiz=${i}`;
+            };
+            listDiv.appendChild(btn);
+        }
+    </script>
+</body>
+</html>

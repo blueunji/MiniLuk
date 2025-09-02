@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miniluk 웹게임</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button id="teacher-toggle-btn" class="teacher-toggle-btn">선생님 모드</button>
+	<div class="teacher-ui" id="teacher-ui" style="display:none;">
+		<div class="teacher-left">
+			<div>현재 선택된 그림</div>
+			<img id="selected-img" src="" alt="선택된 그림">
+		</div>
+		<div class="teacher-center">
+			<div>팔레트</div>
+			<div id="palette" class="palette">
+				<!-- JS에서 팔레트 이미지 생성 -->
+			</div>
+		</div>
+	</div>
+		<div class="teacher-answer-fixed">
+			<img id="answer-img" src="images/quiz01/answer.png" alt="정답">
+		</div>
+	<h1 id="title-text">Miniluk 숫자카드 게임</h1>
+	<div id="game-board">
+		<!-- 36칸 슬롯 생성 -->
+		<div class="board-grid">
+			<!-- JS에서 슬롯 생성 -->
+		</div>
+	</div>
+	<button id="flip-btn">뒤집기</button>
+	<script>
+		// quiz 번호 파싱해서 window.quizNum에 저장
+		const params = new URLSearchParams(window.location.search);
+		window.quizNum = params.get('quiz') ? String(params.get('quiz')).padStart(2,'0') : '01';
+	</script>
+	<script src="script.js"></script>
+</body>
+</html>

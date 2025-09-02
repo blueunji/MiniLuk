@@ -1,0 +1,165 @@
+.teacher-toggle-btn {
+	position:fixed;
+	top:16px;
+	right:32px;
+	z-index:100;
+	width:160px;
+	height:70px;
+	font-size:24px;
+    background: #ffe066;
+    border: 2px solid #a67c52;
+    color: #775737;
+    border-radius: 12px;
+}
+
+.teacher-toggle-btn:hover {
+    background: #e0c453;
+}
+
+.teacher-ui {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 32px;
+	margin: 16px 0 8px 16px;
+}
+.teacher-left, .teacher-center, .teacher-answer, .teacher-toggle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+#selected-img {
+	width: 128px;
+	height: 128px;
+	border: 2px solid #aaa;
+	background: #fff;
+}
+.palette {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 8px;
+	min-height: 64px;
+}
+.palette-img {
+	width: 128px;
+	height: 128px;
+	border: 2px solid #aaa;
+	background: #fff;
+	cursor: pointer;
+	transition: border 0.2s;
+}
+.palette-img.selected {
+	border: 3px solid #ff9e66;
+	box-shadow: 0 0 0 2px #ffd700 inset;
+}
+.answer-indicator {
+	margin-top: 8px;
+	font-size: 1.1em;
+	color: #007bff;
+	font-weight: bold;
+}
+#answer-img {
+	margin-top: 50px;
+	width: 420px;
+	height: 140px;
+	border: 2px solid #0000ff;
+}
+.card.selected-card {
+	background-color: #ff9e66 !important;
+	box-shadow: 0 0 0 3px #ffd700 inset;
+	transition: background 0.2s;
+}
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background: #f7f3e9;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1 {
+	margin-top: 12px;
+	color: #a67c52;
+}
+
+#game-board {
+	display: flex;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+
+.board-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 140px);
+	grid-template-rows: repeat(6, 140px);
+	gap: 8px;
+	background: #e5d7b8;
+	padding: 4px;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.slot {
+	width: 140px;
+	height: 140px;
+	background: #f9f6e3;
+	border: 2px solid #d2b48c;
+	border-radius: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	cursor: pointer;
+	/* 그림자, 효과 제거 */
+	box-shadow: none;
+	transition: none;
+}
+.slot[data-area="1"] {
+	background: #ffffff00;
+}
+.slot[data-area="2"] {
+	background: #ffffff00;
+}
+.slot[data-area="3"] {
+	background: #f3e6c2;
+}
+.slot.selected {
+	outline: 3px solid #ffd700;
+	box-shadow: none;
+}
+
+.card {
+	width: 130px;
+	height: 130px;
+	background: #ffe066;
+	border-radius: 0;
+	/* 그림자, 효과 제거 */
+	box-shadow: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2em;
+	font-weight: bold;
+	color: #a67c52;
+	border: 2px solid #a67c52;
+	position: absolute;
+	user-select: none;
+	cursor: pointer;
+}
+.card.dragging {
+	opacity: 0.6;
+}
+
+#flip-btn {
+	font-size: 18px;
+	margin-top: 20px;
+	width: 200px;
+	height: 48px;
+    background: #ffe066;
+    border: 2px solid #a67c52;
+    color: #775737;
+    border-radius: 12px;
+}

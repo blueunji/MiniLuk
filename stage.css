@@ -1,0 +1,29 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.stage-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.stage-btn {
+    width: 180px;
+    height: 120px;
+    background: #ffe066;
+    border: 2px solid #a67c52;
+    color: #775737;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stage-btn:hover {
+    background: #ffd700;
+}

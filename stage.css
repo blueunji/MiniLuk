@@ -4,6 +4,10 @@
     padding: 16px;
 }
 
+html {
+    background: url('ui/background.png') center center / cover no-repeat fixed;
+}
+
 .stage-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -13,17 +17,16 @@
 }
 
 .stage-btn {
-    width: 180px;
+    width: 220px;
     height: 120px;
-    background: #ffe066;
-    border: 2px solid #a67c52;
-    color: #775737;
-    border-radius: 12px;
+    background: url('ui/button.png') center center / cover no-repeat;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 28px;
+    color: #7b540c;
     font-weight: bold;
+    border: none;
 }
 
 .stage-btn:hover {
-    background: #ffd700;
+
 }

@@ -1,19 +1,57 @@
 .teacher-toggle-btn {
-	position:fixed;
-	top:16px;
-	right:32px;
-	z-index:100;
-	width:160px;
-	height:70px;
-	font-size:24px;
-    background: #ffe066;
-    border: 2px solid #a67c52;
-    color: #775737;
-    border-radius: 12px;
+	position: fixed;
+	width: 220px;
+    height: 120px;
+	top: 16px;
+	right: 32px;
+    background: url('ui/teacher_button.png') center center / cover no-repeat;
+    cursor: pointer;
+    font-size: 24px;
+    color: #7b540c;
+    font-weight: bold;
+    border: none;
 }
 
-.teacher-toggle-btn:hover {
-    background: #e0c453;
+.pressed {
+	position: fixed;
+	width: 220px;
+    height: 120px;
+	top: 16px;
+	right: 32px;
+    background: url('ui/teacher_button_pressed.png') center center / cover no-repeat !important;
+    cursor: pointer;
+    font-size: 24px;
+    color: #7b540c;
+    font-weight: bold;
+    border: none;
+}
+
+.lobby-btn {
+	position: fixed;
+	width: 220px;
+    height: 120px;
+	top: 142px;
+	right: 32px;
+    background: url('ui/button_lobby.png') center center / cover no-repeat;
+    cursor: pointer;
+    font-size: 24px;
+    color: #7b540c;
+    font-weight: bold;
+    border: none;
+}
+
+#flip-btn {
+	position: fixed;
+	width: 220px;
+    height: 120px;
+	top: 572px;
+	right: 32px;
+    background: url('ui/button_flip.png') center center / cover no-repeat;
+    cursor: pointer;
+    font-size: 24px;
+    color: #0c7b19;
+    font-weight: bold;
+    border: none;
 }
 
 .teacher-ui {
@@ -43,8 +81,8 @@
 	min-height: 64px;
 }
 .palette-img {
-	width: 128px;
-	height: 128px;
+	width: 96px;
+	height: 96px;
 	border: 2px solid #aaa;
 	background: #fff;
 	cursor: pointer;
@@ -57,23 +95,23 @@
 .answer-indicator {
 	margin-top: 8px;
 	font-size: 1.1em;
-	color: #007bff;
+	color: #ff5500;
 	font-weight: bold;
 }
 #answer-img {
 	margin-top: 50px;
 	width: 420px;
 	height: 140px;
-	border: 2px solid #0000ff;
+	border: 4px solid #000000;
 }
 .card.selected-card {
 	background-color: #ff9e66 !important;
-	box-shadow: 0 0 0 3px #ffd700 inset;
+	box-shadow: 0 0 0 3px #ffe593 inset;
 	transition: background 0.2s;
 }
 body {
 	font-family: 'Segoe UI', sans-serif;
-	background: #f7f3e9;
+	background: url('ui/background.png') center center / cover no-repeat fixed;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -134,9 +172,8 @@ h1 {
 .card {
 	width: 130px;
 	height: 130px;
-	background: #ffe066;
+	background: #ffe593;
 	border-radius: 0;
-	/* 그림자, 효과 제거 */
 	box-shadow: none;
 	display: flex;
 	align-items: center;
@@ -151,15 +188,4 @@ h1 {
 }
 .card.dragging {
 	opacity: 0.6;
-}
-
-#flip-btn {
-	font-size: 18px;
-	margin-top: 20px;
-	width: 200px;
-	height: 48px;
-    background: #ffe066;
-    border: 2px solid #a67c52;
-    color: #775737;
-    border-radius: 12px;
 }

@@ -243,9 +243,20 @@ function renderTeacherUI() {
 }
 
 // 선생님 모드 토글 버튼
-document.getElementById('teacher-toggle-btn').addEventListener('click', function() {
+const teacherBtn = document.getElementById('teacher-toggle-btn')
+teacherBtn.addEventListener('click', function() {
 	teacherMode = !teacherMode;
+	if (teacherMode) {
+		teacherBtn.classList.add('pressed');
+	} else {
+		teacherBtn.classList.remove('pressed');
+	}
 	renderTeacherUI();
+});
+
+// 로비 버튼
+document.getElementById('lobby-btn').addEventListener('click', function() {
+	window.location.href = 'stage.html';
 });
 
 // 셀 클릭 시 그림 배치 (선생님 모드)

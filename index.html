@@ -8,6 +8,8 @@
 </head>
 <body>
 	<button id="teacher-toggle-btn" class="teacher-toggle-btn">선생님 모드</button>
+	<button id="lobby-btn" class="lobby-btn">퀴즈 선택</button>
+	<button id="flip-btn">뒤집기</button>
 	<div class="teacher-ui" id="teacher-ui" style="display:none;">
 		<div class="teacher-left">
 			<div>현재 선택된 그림</div>
@@ -30,7 +32,6 @@
 			<!-- JS에서 슬롯 생성 -->
 		</div>
 	</div>
-	<button id="flip-btn">뒤집기</button>
 	<script>
 		// quiz 번호 파싱해서 window.quizNum에 저장
 		const params = new URLSearchParams(window.location.search);

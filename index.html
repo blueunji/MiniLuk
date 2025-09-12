@@ -23,7 +23,7 @@
 		</div>
 	</div>
 		<div class="teacher-answer-fixed">
-			<img id="answer-img" src="images/quiz01/answer.png" alt="정답">
+			<img id="answer-img" src="images/quiz00/answer.png" alt="정답">
 		</div>
 	<h1 id="title-text">Miniluk 숫자카드 게임</h1>
 	<div id="game-board">
@@ -36,6 +36,9 @@
 		// quiz 번호 파싱해서 window.quizNum에 저장
 		const params = new URLSearchParams(window.location.search);
 		window.quizNum = params.get('quiz') ? String(params.get('quiz')).padStart(2,'0') : '01';
+
+		// Update answer image dynamically
+		document.getElementById('answer-img').src = `images/quiz${window.quizNum}/answer.png`;
 	</script>
 	<script src="script.js"></script>
 </body>

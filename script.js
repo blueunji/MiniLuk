@@ -65,7 +65,7 @@ function renderBoard() {
 				cardDiv.style.background = `#fff url('images/${card.pattern}.png') center/cover no-repeat`;
 				cardDiv.textContent = '';
 			} else {
-				cardDiv.textContent = card.number;
+				cardDiv.textContent = card.number+".";
 				cardDiv.style.background = '';
 			}
 			slotDiv.appendChild(cardDiv);

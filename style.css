@@ -131,8 +131,8 @@ h1 {
 
 .board-grid {
 	display: grid;
-	grid-template-columns: repeat(6, 140px);
-	grid-template-rows: repeat(6, 140px);
+	grid-template-columns: repeat(6, 120px);
+	grid-template-rows: repeat(6, 120px);
 	gap: 8px;
 	background: #e5d7b8;
 	padding: 4px;
@@ -141,8 +141,8 @@ h1 {
 }
 
 .slot {
-	width: 140px;
-	height: 140px;
+	width: 120px;
+	height: 120px;
 	background: #f9f6e3;
 	border: 2px solid #d2b48c;
 	border-radius: 0;
@@ -170,17 +170,17 @@ h1 {
 }
 
 .card {
-	width: 130px;
-	height: 130px;
+	width: 110px;
+	height: 110px;
 	background: #ffe593;
 	border-radius: 0;
 	box-shadow: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 2em;
+	font-size: 2.8em;
 	font-weight: bold;
-	color: #a67c52;
+	color: #fc0e0e;
 	border: 2px solid #a67c52;
 	position: absolute;
 	user-select: none;
